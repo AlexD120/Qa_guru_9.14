@@ -3,7 +3,7 @@ from qa_guru_9_14.pages.registration_page import RegistrationPage
 
 
 @allure.title('Seccessful fill form')
-def test_student_registration_form():
+def test_student_registration_form(browser_config):
     registration_page = RegistrationPage()
 
     with allure.step('Open registration page'):
